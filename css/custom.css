@@ -9,6 +9,12 @@
     right: 1rem;
     z-index: 1000;
     }
+#news
+{
+    background-image: url('../img/logov1.png');
+    background-size: cover;
+    background-position: center;   
+}
 body
 {
     font-family: 'Young Serif', serif;
