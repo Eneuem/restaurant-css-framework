@@ -15,6 +15,14 @@
     background-size: cover;
     background-position: center;   
 }
+#news_title
+{
+    position: sticky;
+    top: 0;
+    background-color: white; 
+    z-index: 1000; 
+}
+
 body
 {
     font-family: 'Young Serif', serif;
