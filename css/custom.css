@@ -1,0 +1,15 @@
+.jumbotron-bg {
+    background-image: url('../img/burger1.jpg');
+    background-size: cover;
+    background-position: center;
+    }
+#smallScreenMenu {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    z-index: 1000;
+    }
+body
+{
+    font-family: 'Young Serif', serif;
+}
