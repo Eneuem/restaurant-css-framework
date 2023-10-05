@@ -26,6 +26,13 @@
     background-color: white; 
     z-index: 1000; 
 }
+#news_title2
+{
+    position: sticky;
+    top: 0;
+    background-color: #FDBA74; 
+    z-index: 1000; 
+}
 body
 {
     font-family: 'Gabarito', cursive;
