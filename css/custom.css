@@ -3,6 +3,10 @@
     background-size: cover;
     background-position: center;
     }
+.title
+{
+    font-family: 'Young Serif', serif;
+}
 #smallScreenMenu {
     position: absolute;
     top: 100%;
@@ -22,8 +26,7 @@
     background-color: white; 
     z-index: 1000; 
 }
-
 body
 {
-    font-family: 'Young Serif', serif;
+    font-family: 'Gabarito', cursive;
 }
