@@ -15,6 +15,12 @@
     }
 #news
 {
+    background-image: url('../img/Hamburger.png');
+    background-size: cover;
+    background-position: center;   
+}
+#promo
+{
     background-image: url('../img/logov1.png');
     background-size: cover;
     background-position: center;   

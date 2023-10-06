@@ -18,13 +18,13 @@
         <div class="col-start-1 col-end-5 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-1 row-end-2 p-4 lg:p-1 text-center sticky-top-0 flex items-center bg-orange-400 rounded-t-xl">
             <img src="img/TYPO_VIDE.png"class="flex justify-center pl-10 w-1/2 sm:w-1/4 mx-auto md:hidden">
             <!--MENU MD & LG-->
-            <nav class="hidden md:flex items-center justify-center p-4">
-                <ul class="flex items-center space-x-4">
+            <nav class="hidden md:flex items-center justify-center p-4 lg:text-xl">
+                <ul class="flex items-end space-x-4">
                     <li><a href="index.html"><img src="img/TYPO_VIDE.png" class="w-1/2 sm:w-1/4"></a></li>
-                    <li><a href="menu.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-3xl">Menu</a></li>
-                    <li><a href="about.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-3xl">Restaurants</a></li>
-                    <li><a href="gallery.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-3xl">Gallery</a></li>
-                    <li><a href="contact.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-3xl">Contact</a></li>
+                    <li><a href="menu.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300">Menu</a></li>
+                    <li><a href="about.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300">Restaurants</a></li>
+                    <li><a href="gallery.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300">Gallery</a></li>
+                    <li><a href="contact.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300">Contact</a></li>
                 </ul>
             </nav>
             
@@ -55,39 +55,42 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                             </svg>
                         </a>
-                        <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                        <a href="menu.html" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                             Notre menu
                         </a>  
                     </div>
                 </div>
             </section>
         
-        <div id="news" class="col-start-1 col-end-5 mx-4 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-4 lg:col-start-1 lg:col-end-7 row-start-3 row-end-4 p-4 text-center h-1/3 rounded-lg shadow-lg h-auto md:h-[33.33vh] md:overflow-x-auto">
+        <div id="news" class="col-start-1 col-end-5 mx-4 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-4 lg:col-start-1 lg:col-end-7 row-start-3 row-end-4 p-4 text-center h-1/3 rounded-lg shadow-lg h-auto md:h-[50vh] md:overflow-x-auto">
             <!--News-->
             <h1 id="news_title" class="font-extrabold text-xl">News</h1>
-            <figure class="p-4 rounded-lg bg-white-500/100">
-                <h2 class="font-bold text-xl mb-2">Un nouveau burger à la carte</h2>
-                <div class="flex flex-col md:flex-row items-center justify-center md:mx-auto">
-                    <img src="img/DALL·E 2023-10-05 11.21.29 - Illustration with the text 'Baloo's Burgers' in a playful and handwritten font style against a plain background.png" alt="Illustration de 'Baloo's Burgers'" class="w-full md:w-1/2 lg:w-1/3">
-                    <p class="ml-1 md:mb-4">Découvrez notre nouveau burger signature, avec du vieux bruges, des prunes, </p>
+            <figure class="mt-3 p-2 rounded-lg bg-white">
+                <div class="grid grid-cols-2 grid-template-rows-auto gap-2">
+                    <h2 class="font-bold text-xl mb-1 col-start-1 col-end-3 row-start-1 row-end-2 text-orange-900">Un nouveau burger à la carte</h2>
+                    <div class="col-start-1 col-end-2 row-start-2 row-end-3 flex items-center justify-center">
+                        <img src="img/DALL·E 2023-10-05 11.21.29 - Illustration with the text 'Baloo's Burgers' in a playful and handwritten font style against a plain background.png" alt="Illustration de 'Baloo's Burgers'" class="w-full">
+                    </div>
+                    <div class="col-start-2 col-end-3 row-start-2 row-end-3 text-sm text-orange-700">
+                        <p>Découvrez notre nouveau burger signature végétarien, le <span class="font-bold text-orange-900 text-md">Hakuna Patata</span>, avec en star un steak de larves et de grillon, des feuille de palmiers, de la sauce exotique secrète accompagné de ses patates douces.
+                            Disponible dans tous nos restaurant a partir du <span class="font-bold text-orange-900 text-md">06/10/2023</span> et en exclusivité lors de nos "open-cuisine" days, chez tous nos franchisés participants.
+                            Baloo's Burgers, chez nous, c'est le gooupssss .... 
+                        </p>
+                    </div>
                 </div>
-                <figcaption class="text-center text-sm mt-2">Illustration de 'Baloo's Burgers'</figcaption>
-            </figure>
-            <figure class="p-4 border rounded-lg">
-                <h2 class="font-bold text-xl mb-2">Random News</h2>
-                <p class="mb-4">Random text</p>
-                <img src="img/DALL·E 2023-10-05 11.21.29 - Illustration with the text 'Baloo's Burgers' in a playful and handwritten font style against a plain background.png" alt="Illustration de 'Baloo's Burgers'" class="w-full md:w-1/2 lg:w-1/3">
-                <figcaption class="text-center mt-2">Illustration de 'Baloo's Burgers'</figcaption>
-            </figure>
+            </figure>            
+            
+        </div>
+        <div id="promo" class="col-start-1 col-end-5 mx-4 md:mx-0 lg:mx-0 md:col-start-4 md:col-end-7 lg:col-start-7 lg:col-end-13 row-start-4 row-end-5 md:row-start-3 md:row-end-4 lg:row-start-3 lg:row-end-4 p-4 text-center flex flex-col justify-between">
             <!--PROMO-->
-        </div>
-        <div class="col-start-1 col-end-5 mx-4 md:mx-0 lg:mx-0 md:col-start-4 md:col-end-7 lg:col-start-7 lg:col-end-13 row-start-4 row-end-5 md:row-start-3 md:row-end-4 lg:row-start-3 lg:row-end-4 p-4 text-center border-2 border-black">
-            <h1 id="news_title2" class="font-extrabold text-xl">Promo</h1>
-            <div class="bg-orange-100 p-6 rounded-lg shadow-lg text-center">
-                <h1 class="text-2xl font-bold text-orange-900">Happy Hour</h1>
-                <p class="text-orange-700">Tous nos burgers en <span class="font-bold text-orange-900 text-xl">2 + 1</span> gratuit pendant la Coupe du monde de rugby 2023</p>
-            </div>            
-        </div>
+            <h1 id="news_title2" class="font-extrabold text-xl mb-4">Promo</h1>
+            <div class="flex-grow flex items-center justify-center">
+                <div class="bg-orange-100 p-6 rounded-lg shadow-lg text-center items-center">
+                    <h1 class="text-2xl font-bold text-orange-900">Happy Hour</h1>
+                    <p class="text-orange-700">Tous nos burgers en <span class="font-bold text-orange-900 text-xl">2 + 1</span> gratuit pendant la Coupe du monde de rugby 2023</p>
+                </div>
+            </div>
+        </div>       
           <!--FOOTER-->
         <div class="col-start-1 col-end-5 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-5 row-end-6 p-4 text-center bg-orange-400 rounded-b-xl">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 text-center">
