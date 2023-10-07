@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/ICON.ico" type="image/x-icon">
+
     <title>Baloo's Burgers | Welcome</title>
     <!--TROUVER UNE MEILLEURE IMAGE (CSS) ou voir Ahmed pour inclure dans la classe-->
 </head>
 <body class="bg-gray-100 p-4 md:p-10">
-    <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 grid-rows-8 gap-1 md:gap-2 lg:gap-4 bg-white p-4 rounded-lg shadow-lg">
+    <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 grid-rows-8 gap-1 md:gap-2 lg:gap-4 bg-white p-4 rounded-xl shadow-xl">
         <!--HEADER-->
         <div class="col-start-1 col-end-5 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-1 row-end-2 p-4 lg:p-1 text-center sticky-top-0 flex items-center bg-orange-400 rounded-t-xl">
             <img src="img/TYPO_VIDE.png"class="flex justify-center pl-10 w-1/2 sm:w-1/4 mx-auto md:hidden">
@@ -21,21 +22,19 @@
             <nav class="hidden md:flex items-center justify-center p-4">
                 <ul class="flex items-center space-x-4">
                     <li><a href="index.html"><img src="img/TYPO_VIDE.png" class="w-1/2 sm:w-1/4"></a></li>
-                    <li><a href="menu.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-3xl">Restaurants</a></li>
-                    <li><a href="about.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-3xl">About</a></li>
-                    <li><a href="gallery.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-3xl">Gallery</a></li>
-                    <li><a href="contact.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-3xl">Contact</a></li>
+                    <li><a href="menu.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-2xl lg:font-extrabold">Restaurants</a></li>
+                    <li><a href="about.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-2xl lg:font-extrabold">A propos</a></li>
+                    <li><a href="gallery.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-2xl lg:font-extrabold">Mise en bouche</a></li>
+                    <li><a href="contact.html" class="p-4 rounded-lg shadow-lg bg-orange-100 hover:bg-orange-300 lg:text-2xl lg:font-extrabold">Contact</a></li>
                 </ul>
-            </nav>
-            
-            
+            </nav> 
             <!--MENU SM-->
             <div class="relative md:hidden lg:hidden text-black">
                 <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z"/></svg>
                 <ul id="smallScreenMenu" class="hidden bg-orange-300 p-4">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Restaurants</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">Restaurants</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -49,10 +48,10 @@
                     <div class="mb-4">
                         <h3 class="font-semibold mb-1">Sides:</h3>
                         <ul class="list-disc list-inside">
-                            <li>Chen Fries</li>
-                            <li>Casimir Poutine</li>
+                            <li>Chen Fries<span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">HOT</span><span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Veggie</span></li>
+                            <li>Casimir Poutine<span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Veggie</span></li>
                             <li>Tyson Wings</li>
-                            <li>Popcorn Kitchen</li>
+                            <li>Popcorn Kitchen<span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">HOT</span></li>
                         </ul>
                     </div>
                 
@@ -60,16 +59,16 @@
                         <h3 class="font-semibold mb-1">Burgers:</h3>
                         <ul class="list-disc list-inside">
                             <li>Bacon Cheese</li>
-                            <li>Chili Cheese</li>
+                            <li>Chili Cheese<span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">HOT</span></li>
                             <li>Chicken Bacon</li>
-                            <li>Veggie Bacon Burger</li>
+                            <li>Veggie Bacon Burger<span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Veggie</span></li>
                         </ul>
                     </div>
                 
                     <div>
                         <h3 class="font-semibold mb-1">Desserts:</h3>
                         <ul class="list-disc list-inside">
-                            <li>Tiramisu</li>
+                            <li>Tiramisu<span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Veggie</span></li>
                             <li>Mousse au Chocolat Kinder</li>
                             <li>Milkshake</li>
                         </ul>
@@ -77,7 +76,7 @@
                 </div>
                 
             </section>
-          <!--FOOTER-->
+                     <!--FOOTER-->
         <div class="col-start-1 col-end-5 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-5 row-end-6 p-4 text-center bg-orange-400 rounded-b-xl">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 text-center">
                 <ul class="flex items-center justify-center md:justify-start">
@@ -99,6 +98,13 @@
                 </div>
                 <div class="md:hidden">
                     <p class="text-center">&copy; 2023 Baloo's Burgers Inc.</p>
+                </div>
+                <div class="hidden md:block md:col-start-3">
+                    <div class="flex flex-col items-center justify-center">
+                    <label for="email" class="text-center">Abonnez-vous à notre newsletter :</label>
+                    <input class="text-center" type="email" id="email" name="email" placeholder="Votre email" required>
+                    <button type="submit">S'abonner</button>
+                    </div>
                 </div>
             </div>
         </div>
