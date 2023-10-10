@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <link rel="icon" href="img/ICON.ico" type="image/x-icon">
 
-    <title>Baloo's Burgers | Welcome</title>
+    <title>Baloo's Burgers | Photos</title>
     <!--TROUVER UNE MEILLEURE IMAGE (CSS) ou voir Ahmed pour inclure dans la classe-->
 </head>
 <body class="bg-gray-100 p-4 md:p-10">
@@ -36,51 +36,47 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="about.html">Restaurants</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="gallery.html">Photos</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-        </div>
-        <!--KETCHUP-->
-        <section class="col-start-1 col-end-5 mx-4 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-2 row-end-3 text-center rounded-xl">
-            <div class="w-full">
-                <hr class="w-full border-red-500 border-t-8">
-            </div>
-            
-        </section>
-        
+        </div>    
         <!--PAGINATION-->
-            <section class="col-start-1 col-end-5 mx-4 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-3 row-end-4 p-4 text-center rounded-xl">
-                <div>
-                    <div id="page1" class="pagination-page">
-                        <img src="url1.jpg">
-                        <img src="url2.jpg">
-                        <img src="url3.jpg">
-                    </div>
-                    
-                    <div id="page2" class="pagination-page hidden">
-                        <img src="url4.jpg">
-                        <img src="url5.jpg">
-                        <img src="url6.jpg">
-                    </div>
-                    
-                    <div id="page3" class="pagination-page hidden">
-                        <img src="url7.jpg">
-                        <img src="url8.jpg">
-                        <img src="url9.jpg">
-                    </div>
-                    
-                    <div id="page4" class="pagination-page hidden">
-                        <img src="url10.jpg">
-                        <img src="url11.jpg">
-                        <img src="url12.jpg">
-                    </div>    
-                </div>
+            <section class="col-start-1 col-end-5 mx-4 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-2 row-end-3 p-4 text-center">
+                <div class="mb-4">
+                    <div class="flex flex-col items-center md:flex-row space-x-2">
+                        <!--LOL C'EST PAS UNE SOLUTION CA-->
+                        <div class="hidden relative w-full md:w-1/3 transition-transform transform hover:scale-105 ">
+                            <img src="img/slider/BURGY.png" alt="Description de l'image">
+                            <div class="hidden md:flex absolute bottom-2 left-2 bg-white bg-opacity-75 px-2 py-1 rounded text-sm text-black">
+                                Cheesy Cheese
+                            </div>
+                        </div>
 
+                        <div class="relative w-full md:w-1/3 transition-transform transform hover:scale-105 ">
+                            <img src="img/slider/BURGO.png" alt="ALL THE WAY">
+                            <div class="hidden md:flex absolute bottom-2 left-2 bg-white bg-opacity-75 px-2 py-1 rounded text-sm text-black">
+                                ALL THE WAY
+                            </div>
+                        </div>
+                        <div class="relative w-full md:w-1/3 transition-transform transform hover:scale-105 ">
+                            <img src="img/slider/BURGY.png" alt="Description de l'image">
+                            <div class="hidden md:flex absolute bottom-2 left-2 bg-white bg-opacity-75 px-2 py-1 rounded text-sm text-black">
+                                Cheesy Cheese
+                            </div>
+                        </div>
+                    
+                        <div class="relative w-full md:w-1/3 transition-transform transform hover:scale-105 ">
+                            <img src="img/slider/FRIEs.png" alt="Description de l'image">
+                            <div class="hidden md:flex absolute bottom-2 left-2 bg-white bg-opacity-75 px-2 py-1 rounded text-sm text-black">
+                                Chen Fries
+                            </div>
+                        </div>
+                    </div>
 
                 <!--PAGINEUR TAILWIND UI-->
-                <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
-                    <a href="#" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm mt-4" aria-label="Pagination">
+                    <a href="#" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 cursor-not-allowed">
                       <span class="sr-only">Previous</span>
                       <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
@@ -88,10 +84,10 @@
                     </a>
                     <!-- Current: "z-10 bg-orange-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
                     <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-orange-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">1</a>
-                    <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
-                    <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
-                    <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">4</a>
-                    <a href="#" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                    <a href="gallery2.html" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
+                    <a href="gallery3.html" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">3</a>
+                    <a href="gallery4.html" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">4</a>
+                    <a href="gallery2.html" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
                       <span class="sr-only">Next</span>
                       <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
@@ -99,23 +95,8 @@
                     </a>
                   </nav>
             </section>
-        <!--CHEESE-->
-        <section class="col-start-1 col-end-5 mx-4 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-4 row-end-5 text-center rounded-xl">
-            <div class="w-full">
-                <hr class="w-full border-yellow-500 border-t-8">
-            </div>  
-        </section>    
-  
-        <!--SALAD-->
-        <section class="col-start-1 col-end-5 mx-4 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-7 row-end-8 md:row-start-6 md:row-end-7 text-center rounded-xl">
-            <div class="w-full">
-                <hr class="w-full border-green-500 border-t-8">
-            </div>
-            
-        </section>
-            
           <!--FOOTER-->
-        <div class="col-start-1 col-end-5 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-8 row-end-9 md:row-start-7 md:row-end-8 p-4 text-center bg-orange-400 rounded-b-xl">
+        <div class="col-start-1 col-end-5 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-3 row-end-4 p-4 text-center bg-orange-400 rounded-b-xl">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 text-center">
                 <ul class="flex justify-center md:justify-start">
                     <li class="px-2">
@@ -171,58 +152,5 @@
             document.getElementById('cookie-banner').style.display = 'none';
         }
     </script> -->
-    <script>
-        document.querySelector('nav').addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') {
-        const page = e.target.innerText;
-
-        // Cacher toutes les pages
-        document.querySelectorAll('.pagination-page').forEach(el => {
-            el.classList.add('hidden');
-        });
-
-        // Afficher la page sélectionnée
-        document.getElementById('page' + page).classList.remove('hidden');
-    }
-});
-
-    </script>
-    <!--CHATGPT MERCI-->
-    <script>
-        document.querySelector('nav').addEventListener('click', (e) => {
-    // Empêcher le comportement par défaut des liens
-    e.preventDefault();
-
-    let page;
-    if (e.target.closest('a').hasAttribute('aria-current')) { // Si le lien actuel est cliqué
-        return; // Ne faites rien si l'utilisateur clique sur la page actuelle
-    } else if (e.target.closest('a').querySelector('svg')) { // Si un bouton avec un SVG (Précédent ou Suivant) est cliqué
-        const currentPage = document.querySelector('[aria-current="page"]');
-        const currentPageNumber = parseInt(currentPage.innerText, 10);
-        if (e.target.closest('a').querySelector('svg').getAttribute("viewBox") === "0 0 20 20") { // Bouton suivant
-            page = currentPageNumber + 1;
-        } else { // Bouton précédent
-            page = currentPageNumber - 1;
-        }
-    } else {
-        page = e.target.innerText; // Sinon, prenez simplement le numéro de la page du lien cliqué
-    }
-
-    // Cacher toutes les pages
-    document.querySelectorAll('.pagination-page').forEach(el => {
-        el.classList.add('hidden');
-    });
-
-    // Supprimer l'attribut "aria-current" de la page actuelle
-    document.querySelector('[aria-current="page"]').removeAttribute('aria-current');
-
-    // Afficher la page sélectionnée
-    document.getElementById('page' + page).classList.remove('hidden');
-
-    // Ajouter l'attribut "aria-current" à la nouvelle page actuelle
-    document.querySelector(`nav a:nth-child(${page + 1})`).setAttribute('aria-current', 'page');
-});
-
-    </script>
 </body>
 </html>
