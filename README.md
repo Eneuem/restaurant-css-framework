@@ -10,6 +10,8 @@ Le portfolio est conçu avec un look minimaliste, mettant en avant mon nom, mon 
 
 Celui ci est pensé comme un hamburger, particulièrement la page d'acceuil qui reprend également les condiments et l'ensemble du site et est complétement responsive.
 
+![Apercu mobile](img/SCREENSHOTS/MOBILE.png)
+
 ## Technologies Utilisées
 
 - HTML
