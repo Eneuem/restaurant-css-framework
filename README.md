@@ -30,7 +30,8 @@ Le projet contient les fichiers et dossiers suivants :
 - `index.html` : la page d'acceuil du site, plus un "cookie clicker" que j'ai désactivé sur les autres pages.
 - `menu.html` : reprend la structure de la page d'acceuil, sans les condiments et y incorpore un menu responsive.
 - `gallery.html` : il existe 4 variantes de cette page, une par pagination, elles reprennent également la structure de la page d'acceuil pour y ajouter des photos.
-- `contact.html` : reprend la structure de la page d'acceuil et remplace le corp par un formulaire de contact
+- `contact.html` : reprend la structure de la page d'acceuil et remplace le corp par un formulaire de contact.
+- `about.html` : reprend la structure des pages précédente et remplace le corp par la localisation des restaurants.
 - `css/` : un dossier contenant le fichier `custom.css` qui contrôle les insertions personnelles dans le CSS.
 - `img/` : un dossier contenant des sous dossiers et toutes les images présentes dans ce dépot.
 - `README.md` : ce fichier qui décrit le projet.
