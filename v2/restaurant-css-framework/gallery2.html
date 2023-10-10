@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/ICON.ico" type="image/x-icon">
+
+    <title>Baloo's Burgers | Photos</title>
+</head>
+<body class="bg-gray-100 p-4 md:p-10">
+    <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 grid-rows-12 gap-1 md:gap-2 lg:gap-4 bg-white p-4 rounded-lg shadow-lg">
+        <!--HEADER-->
+        <div class="col-start-1 col-end-5 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-1 row-end-2 p-4 text-center sticky-top-0 flex items-center bg-orange-400 rounded-t-xl">
+            <img src="img/TYPO_VIDE.png" class="flex justify-center pl-10 w-1/2 sm:w-1/4 mx-auto md:hidden">
+            <!--MENU MD & LG-->
+            <nav class="hidden md:flex items-center justify-center p-4">
+                <ul class="flex items-center space-x-4">
+                    <li><a href="index.html"><img src="img/TYPO_VIDE.png" class="w-1/2 sm:w-1/4"></a></li>
+                    <li><a href="menu.html" class="p-4 rounded-lg shadow-inner bg-orange-100 hover:bg-orange-300">Menu</a></li>
+                    <li><a href="about.html" class="p-4 rounded-lg shadow-inner bg-orange-100 hover:bg-orange-300">Restaurants</a></li>
+                    <li><a href="gallery.html" class="p-4 rounded-lg shadow-inner bg-orange-100 hover:bg-orange-300">Photos</a></li>
+                    <li><a href="contact.html" class="p-4 rounded-lg shadow-inner bg-orange-100 hover:bg-orange-300">Contact</a></li>
+                </ul>
+            </nav>
+   
+            <!--MENU SM-->
+            <div class="relative md:hidden lg:hidden text-black">
+                <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z"/></svg>
+                <ul id="smallScreenMenu" class="hidden bg-orange-300 p-4">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">Restaurants</a></li>
+                    <li><a href="gallery.html">Photos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>       
+        </section>
+        
+        <section class="col-start-1 col-end-5 mx-4 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-2 row-end-3 p-4 text-center">
+            <div class="mb-4">
+                <div class="flex flex-col items-center md:flex-row space-x-2">
+                    <!--LOL C'EST PAS UNE SOLUTION CA-->
+                    <div class="hidden relative w-full md:w-1/3 transition-transform transform hover:scale-90 ">
+                        <img src="img/slider/BURGY.png" alt="Description de l'image">
+                        <div class="hidden md:flex absolute bottom-2 left-2 bg-white bg-opacity-75 px-2 py-1 rounded text-sm text-black">
+                            Cheesy Cheese
+                        </div>
+                    </div>
+
+                    <div class="relative w-full md:w-1/3 transition-transform transform hover:scale-90 ">
+                        <img src="img/slider/LOADEDNACHOS.png" alt="Popcorn Kitchen">
+                        <div class="hidden md:flex absolute bottom-2 left-2 bg-white bg-opacity-75 px-2 py-1 rounded text-sm text-black">
+                            Popcorn Kitchen
+                        </div>
+                    </div>
+                    <div class="relative w-full md:w-1/3 transition-transform transform hover:scale-90 ">
+                        <img src="img/slider/WING.png" alt="Tyson wings">
+                        <div class="hidden md:flex absolute bottom-2 left-2 bg-white bg-opacity-75 px-2 py-1 rounded text-sm text-black">
+                            Tyson wings
+                        </div>
+                    </div>
+                
+                    <div class="relative w-full md:w-1/3 transition-transform transform hover:scale-90 ">
+                        <img src="img/slider/CROQUE2.png" alt="Croque-en-bouche">
+                        <div class="hidden md:flex absolute bottom-2 left-2 bg-white bg-opacity-75 px-2 py-1 rounded text-sm text-black">
+                            Croque en bouche
+                        </div>
+                    </div>
+                </div>
+
+                <!--PAGINEUR TAILWIND UI-->
+                <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm mt-4" aria-label="Pagination">
+                    <a href="gallery.html" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                      <span class="sr-only">Previous</span>
+                      <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                    <!-- Current: "z-10 bg-orange-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+                    <a href="gallery.html" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">1</a>
+                    <a href="gallery2.html" aria-current="page" class="relative z-10 inline-flex items-center bg-orange-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">2</a>
+                    <a href="gallery3.html" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">3</a>
+                    <a href="gallery4.html" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">4</a>
+                    <a href="gallery3.html" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                      <span class="sr-only">Next</span>
+                      <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </nav>
+            </section>           
+          <!--FOOTER-->
+        <div class="col-start-1 col-end-5 md:mx-0 lg:mx-0 md:col-start-1 md:col-end-7 lg:col-start-1 lg:col-end-13 row-start-3 row-end-4 p-4 text-center bg-orange-400 rounded-b-xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 text-center">
+                <ul class="flex justify-center md:justify-start">
+                    <li class="px-2">
+                        <a href="https://www.twitter.com" target="_blank" title="Rejoignez nous sur Twitter"><svg class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+                    </li>
+                    <li class="px-2">
+                        <a href="https://www.facebook.com" target="_blank" title="Rejoignez nous sur Facebook"><svg class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                    </li>
+                    <li class="px-2">
+                        <a href="https://www.thefork.com" target="_blank" title="Reservez sur The Fork"><svg class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"  xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg></a>
+                    </li>
+                    <li class="px-2">
+                        <a href="https://www.deliveroo.com" target="_blank" title="Faites vous livrer à la maison"><svg class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"  xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M312 32c-13.3 0-24 10.7-24 24s10.7 24 24 24h25.7l34.6 64H222.9l-27.4-38C191 99.7 183.7 96 176 96H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h43.7l22.1 30.7-26.6 53.1c-10-2.5-20.5-3.8-31.2-3.8C57.3 224 0 281.3 0 352s57.3 128 128 128c65.3 0 119.1-48.9 127-112h49c8.5 0 16.3-4.5 20.7-11.8l84.8-143.5 21.7 40.1C402.4 276.3 384 312 384 352c0 70.7 57.3 128 128 128s128-57.3 128-128s-57.3-128-128-128c-13.5 0-26.5 2.1-38.7 6L375.4 48.8C369.8 38.4 359 32 347.2 32H312zM458.6 303.7l32.3 59.7c6.3 11.7 20.9 16 32.5 9.7s16-20.9 9.7-32.5l-32.3-59.7c3.6-.6 7.4-.9 11.2-.9c39.8 0 72 32.2 72 72s-32.2 72-72 72s-72-32.2-72-72c0-18.6 7-35.5 18.6-48.3zM133.2 368h65c-7.3 32.1-36 56-70.2 56c-39.8 0-72-32.2-72-72s32.2-72 72-72c1.7 0 3.4 .1 5.1 .2l-24.2 48.5c-9 18.1 4.1 39.4 24.3 39.4zm33.7-48l50.7-101.3 72.9 101.2-.1 .1H166.8zm90.6-128H365.9L317 274.8 257.4 192z"/></svg></a>
+                    </li>
+                </ul>
+                <div class="hidden md:block md:col-start-2 text-xl font-bold text-center">
+                    <p>&copy; 2023 Baloo's Burgers Inc.</p>
+                </div>
+                <div class="md:hidden text-xl font-bold text-center">
+                    <p class="text-center">&copy; 2023 Baloo's Burgers Inc.</p>
+                </div>
+                <div class="hidden md:block md:col-start-3">
+                    <div class="flex flex-col items-center justify-center space-y-4">
+                        <h2 class="text-xl font-bold text-center">Abonnez-vous à notre newsletter :</h2>
+                        <input class="w-64 px-4 py-2 border rounded-md text-center placeholder-gray-500" type="email" id="email" name="email" placeholder="Votre email" required>
+                        <button type="submit" class="px-8 py-2 bg-blue-600 text-white rounded-xl bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+                            S'abonner
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- <div id="cookie-banner" class="fixed bottom-0 w-full bg-gray-800 p-4 text-center shadow-lg opacity-90 z-50">
+        Ce site utilise des cookies pour améliorer votre expérience.
+        <button class="ml-4 px-4 py-2 bg-green-500 text-white rounded" onclick="Cookies()">Accepter</button>
+        <button class="ml-4 px-4 py-2 bg-red-500 text-white rounded" onclick="Cookies()">Refuser</button>
+    </div> -->
+    <!--J'crois qu'il sert a rien-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--HAMBURGER SCRIPT-->
+    <script>
+        function toggleMenu() 
+        {
+        const menu = document.getElementById('smallScreenMenu');
+        menu.classList.toggle('hidden');
+        }
+    </script>
+    <!--STAY ON BOTTOM SCRIPT-->
+    <!-- <script>
+        function Cookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+    </script> -->
+</body>
+</html>

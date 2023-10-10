@@ -1,0 +1,53 @@
+.jumbotron-bg {
+    background-image: url('../img/burger1.jpg');
+    background-size: cover;
+    background-position: center;
+    }
+.title
+{
+    font-family: 'Young Serif', serif;
+}
+#smallScreenMenu {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    z-index: 1000;
+    }
+#news
+{
+    background-image: url('../img/Hamburger.png');
+    background-size: cover;
+    background-position: center;   
+}
+#promo
+{
+    background-image: url('../img/logov1.png');
+    background-size: cover;
+    background-position: center;   
+}
+#news_title
+{
+    position: sticky;
+    top: 0;
+    background-color: white; 
+    z-index: 1000; 
+}
+#news_title2
+{
+    position: sticky;
+    top: 0;
+    background-color: #FDBA74; 
+    z-index: 1000; 
+}
+body
+{
+    font-family: 'Gabarito', cursive;
+}
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+}
